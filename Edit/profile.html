@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/proStyle.css">
+  <title>Profile</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg position-fixed top-0 end-0 start-0">
+    <div class="container">
+      <img class="logo" src="logo.png" alt="" />
+      <div class="navs">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="sit offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item nav-active">
+                <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+              </li>
+
+              <li class="nav-item nav-active">
+                <a class="nav-link" href="../index.html#offers">OFFERS</a>
+              </li>
+
+              <li class="nav-item nav-active">
+                <a class="nav-link" href="../index.html#contact">CONTACT US</a>
+              </li>
+
+              <li class="nav-item nav-active">
+                <a class="nav-link" href="../Login/login.html">LOGIN</a>
+              </li>
+              <li class="nav-item nav-active">
+                <a class="nav-link" href="../signup/signup.html">REGISTER</a>
+              </li>
+
+              <li class="nav-item nav-active">
+                <a class="nav-link" href="../manage tickets/manage tickets.html">MANAGE</a>
+              </li>
+
+              <li class="nav-item nav-active">
+                <a class="nav-link" href="#">EDIT INFO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="profile-page pt-5">
+    <div class="edit-profile">
+      <div class="profile-pic">
+        <div class="profile-picture">
+          <img class="pic" id="photo"
+            src="imgs/man-profile-cartoon-smiling-round-icon-vector-illustration-graphic-design-135443422.jpg " alt="">
+          <input type="file" id="file">
+          <label for="file" id="uploadpic">Choose Photo</label>
+        </div>
+      </div>
+      <!--user information-->
+      <form class="info">
+        <!--general information-->
+        <div class="box">
+          <h4>General Information</h4>
+          <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Lina">
+          </div>
+          <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Gamal">
+          </div>
+          <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Egypt">
+          </div>
+        </div>
+        <!--personal information-->
+        <div class="box">
+          <h4>Personal Information</h4>
+          <div>
+            <label for="id">National ID:</label>
+            <input type="text" id="id" name="id" placeholder="4381659473546">
+          </div>
+          <div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="653757345">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="lina@gmail.com">
+          </div>
+        </div>
+        <!--payment information-->
+        <div class="box">
+          <h4>Payment Information</h4>
+          <div>
+            <label for="cardnum">Card Number:</label>
+            <input type="text" id="cardnum" name="cardnum" placeholder="7653956352">
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="1111">
+          </div>
+          <div>
+            <label for="payment">Payment Method/Expiration Date</label>
+            <select name="paymentcard" id="payment">
+              <optgroup>
+                <option value="">Paypal</option>
+                <option value="">Matercard</option>
+                <option value="">Credit/Debit Card</option>
+              </optgroup>
+              <input type="month" id="payment" name="paymentexp">
+          </div>
+        </div>
+        <!--manage-->
+        <div id="box4">
+          <h4>Manage Account</h4>
+          <div>
+            <input id="bttn" type="button" value="Edit profile" onclick="">
+          </div>
+          <div id="bttn2">
+            <input id="bttn" type="button" value="Delete Account" onclick="">
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
